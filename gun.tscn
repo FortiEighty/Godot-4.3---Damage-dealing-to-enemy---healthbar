@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bg2or2gbuqcqn"]
+
+[ext_resource type="Script" path="res://gun.gd" id="1_rim40"]
+[ext_resource type="Texture2D" uid="uid://dups7whryukry" path="res://icon.svg" id="1_ycc5h"]
+[ext_resource type="PackedScene" uid="uid://b0pcukwjui8v4" path="res://bullet.tscn" id="2_xojfr"]
+
+[node name="Gun" type="Node2D"]
+script = ExtResource("1_rim40")
+bulletScene = ExtResource("2_xojfr")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1.5, 1)
+scale = Vector2(0.0390625, 0.078125)
+texture = ExtResource("1_ycc5h")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(15.625, -6.625)
+scale = Vector2(0.255859, 0.0527344)
+texture = ExtResource("1_ycc5h")
